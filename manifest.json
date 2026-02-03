@@ -1,0 +1,58 @@
+{
+"manifest_version": 2,
+"name": "Незаменимый блокировщик рекламы для РУС Флаго",
+"version": "1.0",
+"description": "Специализируется на блокировке рекламы и слежки в русскоязычном сегменте интернета. by Сергей Айтилин",
+"author": "Sergey Aitilin = www.sergey-aitilin.net.ru/proekty/flago/ + github.com/Sergey-Aitilin/Flago",
+"browser_specific_settings": {
+"gecko": {
+"id": "dev@sergey-aitilin.net.ru",
+"data_collection_permissions": {
+"required": ["none"],
+"usage": [
+{
+"type": "none",
+"description": "Данное расширение не собирает никаких данных без действия пользователя."
+}
+]
+}
+}
+},
+"icons": {
+"16": "img/icon.png",
+"32": "img/icon.png",
+"48": "img/icon.png",
+"64": "img/icon.png",
+"128": "img/icon.png",
+"256": "img/icon.png"
+},
+"permissions": [
+"webRequest",
+"webRequestBlocking",
+"scripting",
+"tabs",
+"storage",
+"<all_urls>",
+"*://*/*"
+],
+"content_scripts": [
+{
+"matches": [
+"<all_urls>"
+],
+"js": [
+"js/blokkk.js", "js/blokk2k.js"
+]
+}
+],
+"background": {
+"scripts": ["background.js"],
+"persistent": true
+},
+"browser_action": {
+"default_title": "Флаго - Мощный блокировщик (РУС и не только) рекламы",
+"default_popup": "popup.html"
+},
+"web_accessible_resources":["/css/fas/fa-brands-400.ttf","/css/fas/fa-brands-400.woff2","/css/fas/fa-regular-400.ttf","/css/fas/fa-regular-400.woff2","/css/fas/fa-solid-900.ttf","/css/fas/fa-solid-900.woff2","/css/fas/fa-v4compatibility.ttf","/css/fas/fa-v4compatibility.woff2","/img/logot.png"],
+"content_security_policy": "default-src 'none'; script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://www.sergey-aitilin.net.ru/extensionsSys/"
+}
