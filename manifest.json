@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
 "name": "Незаменимый блокировщик рекламы для РУС Флаго",
-"version": "1.0",
+"version": "2.0",
 "description": "Специализируется на блокировке рекламы и слежки в русскоязычном сегменте интернета. by Сергей Айтилин",
 "author": "Sergey Aitilin = www.sergey-aitilin.net.ru/proekty/flago/ + github.com/Sergey-Aitilin/Flago",
 "browser_specific_settings": {
