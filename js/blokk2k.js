@@ -2,36 +2,7 @@
 class DOMBlocker {
 constructor() {
 this.observer = null;
-this.blockedSelectors = [
-'[aria-label="Информepы"]',
-'[aria-label="Установите Яндекс Браузер"]',
-'[class^="reasoning-"]',
-'[class^="Modal"]',
-'[class^="Distribution-Popup"]',
-'[data-container="outer"]',
-'[id="distr-pcode-container"]',
-'[aria-label="Рекламный баннер"]',
-'[id^="yandex_rtb_"]',
-'[class="adsbygoogle"]',
-'[class="ads"]',
-'[class^="ads"]',
-'.new-main-banners',
-'.main-page__banner-info',
-'.banners-zones-container',
-'rambler-info-banner',
-'[rambler-info-banner]',
-'yandex-metrica-id',
-'[yandex-metrica-id]',
-'[data-madv="all"]',
-'[data-widget="bannerCarousel"]',
-'[class^="dzen-desktop--base-button__"]',
-'[class^="dzen-desktop--corner-banner__"]',
-'[id^="auto-slide-ad-"]',
-'[id^="DistributionPopupDesktopRenew__"]',
-'[id=^"adfox_"]',
-'.content__section--adv',
-'[target="_tab_without_morda"]'
-];
+this.blockedSelectors = ['[aria-label="Информepы"]','[aria-label="Установите Яндекс Браузер"]','[class^="reasoning-"]','[class^="Modal"]','[class^="Distribution-Popup"]','[data-container="outer"]','[id="distr-pcode-container"]','[aria-label="Рекламный баннер"]','[id^="yandex_rtb_"]','[class="adsbygoogle"]','[class="ads"]','[class^="ads"]','.new-main-banners','.main-page__banner-info','.banners-zones-container','rambler-info-banner','[rambler-info-banner]','yandex-metrica-id','[yandex-metrica-id]','[data-madv="all"]','[data-widget="bannerCarousel"]','[class^="dzen-desktop--base-button__"]','[class^="dzen-desktop--corner-banner__"]','[id^="auto-slide-ad-"]','[id^="DistributionPopupDesktopRenew__"]','[id=^"adfox_"]','.content__section--adv','[target="_tab_without_morda"]','[class^="adv-slot-"]','.skeleton'];
 this.init();
 }
 shouldBlock(element) {
