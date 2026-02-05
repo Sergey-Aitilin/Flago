@@ -83,7 +83,12 @@ action: 'counterUpdated',
 count: totalBlockedConnections
 }).catch(() => {});
 }, 0);
+if (details.type === "main_frame" || details.type === "sub_frame") {
+const redirectUrl = browser.runtime.getURL(`/html/blocked.html?url=${encodeURIComponent(details.url)}`);
+return { redirectUrl: redirectUrl };
+} else {
 return { cancel: true };
+}
 }
 return {};
 },
