@@ -9,10 +9,17 @@
 </head>
 <body>
 <img src="img/logot.png" alt="err" class="logot" />
-<h1 style="color: #FFFFFF!important">Флаго<span style="font-size: 9px!important; color: #CCC!important;"> (v.4.0)</span></h1>
+<h1 style="color: #FFFFFF!important">«Флаго»<span style="padding-left: 5px!important; font-size: 9px!important; color: #CCC!important;"> (v.5.0) - <a href="#" id="LinkForOpeningNewVBlock" style="text-decoration: underline!important;">что нового?</a></span></h1>
+<div id="ThisNewVBlock" class="hidden">
+<button id="closeNewVBlock">✖</button>
+<p>Добавлена умная защита от подозрительных сайтов (антифишинг);</p>
+<p>теперь изменения новой версии всегда доступны прямо в расширении;</p>
+<p>пользователь может сообщить об обнаружении им фишинга;</p>
+<p>улучшен второй этап блокировки (визуальное скрытие) рекламы. Теперь пустых пространств еще меньше!</p>
+</div>
 <div class="hryei" style="text-align: left!important;">
-<h2 style="padding-top:5px;">Заблокировано соединений&nbsp;с:</h2>
-<p>рекламой / трекерами / анлалитикой / пр. слежкой / JS.майнерами- <span class="status on" id="totalCounter">Всегда вкл.</span></p>
+<h2 style="padding-top:5px;">«Флаго» блокирует, а Вы наслаждаетесь!</h2>
+<p>Именно столько рекламы / трекеров / анлалитики / пр. слежки / JS.майнеров / подозрительных сайтов «Флаго» уже заблокировал - <span class="status on" id="totalCounter">Всегда вкл.</span></p>
 <button class="but_upd" id="resetButton"><i class="fas fa-undo"></i>&nbsp; Сбросить счетчик</button>
 </div>
 <div class="hryei dp" style="text-align: left!important;">
@@ -28,6 +35,7 @@
 <a id="soobshit-o-polomke" title="Сообщить о поломке*"><button class="but_upd"><i class="fas fa-exclamation-triangle"></i>&nbsp; Сообщить о поломке*</button></a>
 <a id="zablokirovannaya-reklama-zanimaet-mesto" title="Заблокированная реклама занимает место*"><button class="but_upd"><i class="fas fa-ban"></i>&nbsp; Заблокированная реклама занимает место*</button></a>
 <a id="ya-vizhu-reklamu" title="Я вижу рекламу*"><button class="but_upd"><i class="fas fa-eye"></i>&nbsp; Я вижу рекламу*</button></a>
+<a id="soobshit-o-fishinge" title="Сообщить о фишинге*"><button class="but_upd"><i class="fas fa-bug"></i>&nbsp; Сообщить о фишинге*</button></a>
 <a href="https://www.sergey-aitilin.net.ru/proekty/flago/#donate" title="Поддержать проект"><button class="but_upd"><i class="fas fa-heart"></i>&nbsp; Поддержать проект</button></a>
 <p class="jefh" style="font-size: 9px!important;">После нажатия кнопки с данным знаком (*), на сервер Флаго будет отправлен полный URL текущей страницы. Личная информация (например, IP-адрес) не передается.</p>
 </div>
