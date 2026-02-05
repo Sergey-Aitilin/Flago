@@ -93,4 +93,24 @@ console.error('Flago popup: Error opening tab:', error);
 handleButtonClick('soobshit-o-polomke', 'soobshit-o-polomke');
 handleButtonClick('zablokirovannaya-reklama-zanimaet-mesto', 'zablokirovannaya-reklama-zanimaet-mesto');
 handleButtonClick('ya-vizhu-reklamu', 'ya-vizhu-reklamu');
+handleButtonClick('soobshit-o-fishinge', 'soobshit-o-fishinge');
 });
+(function(){
+"use strict";
+document.addEventListener('DOMContentLoaded', function() {
+const LinkForOpeningNewVBlock = document.getElementById('LinkForOpeningNewVBlock');
+const closeNewVBlock = document.getElementById('closeNewVBlock');
+const ThisNewVBlock = document.getElementById('ThisNewVBlock');
+if (LinkForOpeningNewVBlock && ThisNewVBlock) {
+LinkForOpeningNewVBlock.addEventListener('click', function(e) {
+e.preventDefault();
+ThisNewVBlock.classList.remove('hidden');
+});
+}
+if (closeNewVBlock && ThisNewVBlock) {
+closeNewVBlock.addEventListener('click', function() {
+ThisNewVBlock.classList.add('hidden');
+});
+}
+});
+})();
