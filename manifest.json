@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
 "name": "Незаменимый блокировщик рекламы для РУС Флаго",
-"version": "4.0",
+"version": "5.0",
 "description": "Специализируется на блокировке рекламы и слежки в русскоязычном сегменте интернета. by Сергей Айтилин",
 "author": "Sergey Aitilin = www.sergey-aitilin.net.ru/proekty/flago/ + github.com/Sergey-Aitilin/Flago",
 "browser_specific_settings": {
@@ -53,6 +53,6 @@
 "default_title": "Флаго - Мощный блокировщик (РУС и не только) рекламы",
 "default_popup": "popup.html"
 },
-"web_accessible_resources":["/css/fas/fa-brands-400.ttf","/css/fas/fa-brands-400.woff2","/css/fas/fa-regular-400.ttf","/css/fas/fa-regular-400.woff2","/css/fas/fa-solid-900.ttf","/css/fas/fa-solid-900.woff2","/css/fas/fa-v4compatibility.ttf","/css/fas/fa-v4compatibility.woff2","/img/logot.png"],
+"web_accessible_resources":["/css/fas/fa-brands-400.ttf","/css/fas/fa-brands-400.woff2","/css/fas/fa-regular-400.ttf","/css/fas/fa-regular-400.woff2","/css/fas/fa-solid-900.ttf","/css/fas/fa-solid-900.woff2","/css/fas/fa-v4compatibility.ttf","/css/fas/fa-v4compatibility.woff2","/img/logot.png","/html/blocked.html","/img/logot.png","/css/blocked.css"],
 "content_security_policy": "default-src 'none'; script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self' https://www.sergey-aitilin.net.ru/extensionsSys/"
 }
